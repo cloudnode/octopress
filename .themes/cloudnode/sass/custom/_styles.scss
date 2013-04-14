@@ -1,2 +1,26 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+#content .blog-index {
+  article h1 {
+    font-size: 1.4em;
+    a { color: inherit; &:hover { color: $link-color-hover; text-decoration: none; } }
+  }
+}  
+
+a { text-decoration: none; }
+
+@media only screen and (min-width: 992px) {
+  h1 { font-size: 1.4em; line-height: 1.2em; }
+}
+
+div#logo { float: left; }
+div#subtitle { color: gray; font-size: .5em; float: left; margin-top: 8px; }
+
+body>header { 
+  padding: .5em; 
+  border-top: 3px solid #0084b4; 
+}
+
+html {
+  background: #e6e6e6;
+}
