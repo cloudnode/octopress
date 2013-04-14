@@ -1,6 +1,10 @@
 <hgroup>
-  <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-  {% if site.subtitle %}
-    <h2>{{ site.subtitle }}</h2>
-  {% endif %}
+  <div id="logo">
+    <a href="http://cloudno.de"><img src="/images/cloudnode-header-logo.png" alt="Logo"></img></a>
+  </div>
+  <div id="subtitle">
+    {% if site.subtitle %}
+      | {{ site.subtitle }}
+    {% endif %}
+  </div>
 </hgroup>
